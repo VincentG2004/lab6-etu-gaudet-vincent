@@ -43,6 +43,7 @@ header .wrapper {
     align-items: center;
     justify-content: center;
     height: 80px;
+    z-index: 1;
 }
 
 h1{
@@ -92,4 +93,73 @@ h1{
     }
  
 
-  
+  /* PIED-DE-PAGE */
+
+  footer .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    background-color: rgba(15,38,49,0.95);
+    border-color: transparent;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 1.6rem;
+    font-variant: small-caps;
+  }
+
+  /* NAVIGATION MÉDIAS SOCIAUX */
+
+  .media ul {
+    background-color: rgba(15,38,49);
+    border-color: transparent;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: fixed;
+    left: 0;
+    top: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .media img {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    position: relative;
+  }
+
+  .media img:hover {
+    left: 3px;
+  }
+
+  /* MODALE */
+
+  img.zoom {
+    width: 800px;
+    height: 600px;
+    cursor: pointer;
+    background-color: white;
+    padding: 30px;
+    border-color: transparent;
+    border-radius: 10px;
+  }
+
+  .modale {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    /*margin: auto auto;*/
+  }
+
+  .modale.visible {
+    display: flex;
+  }
