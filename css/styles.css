@@ -1,0 +1,95 @@
+/* BASE */
+html {
+    box-sizing: border-box;
+    font-size:62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: "Averia Serif Libre", serif;
+    color: #eca136;;
+    background-color: rgba(9,26,33);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*  MISE EN PAGE */
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* MODULES */
+/* EN-TÊTE */
+
+/*header {
+    max-width: 1000px;
+}*/
+
+header .wrapper {
+    background-color: rgba(15,38,49,0.95);
+    position: fixed;
+    top: 0px;
+    left: calc(50% - 500px);
+    border-color: transparent;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+h1{
+    font-size: 4.0rem;
+}
+
+/* CONTENEUR PRINCIPALE */
+
+    .contenu .wrapper{
+        max-width: 925px;
+        margin: 100px auto 0 auto;
+    }
+
+    .photo{
+        max-width: 100%;
+    }
+
+    .contenu ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+        list-style: none;
+        padding: 0;
+    }
+
+    .contenu li {
+        padding: 20px;
+        background-color: rgba(15,38,49);
+        border-color: transparent;
+        border-radius: 10px;
+       position: relative;
+    }
+
+.bouton {
+    background-color: rgba(255, 255, 255, 0.5);
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-color: transparent;
+        border-bottom-left-radius: 5px;
+        cursor: pointer;
+       position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+ 
+
+  
